@@ -1,0 +1,5 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:VisualElement name="timer" style="height: 100px;">
+        <ui:Label display-tooltip-when-elided="true" name="timer-label" style="font-size: 25px; -unity-font-style: bold; margin-left: 10px; margin-right: 10px; margin-top: 10px; margin-bottom: 10px;" />
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,31 +1,21 @@
-using System.Collections;
+using Palmmedia.ReportGenerator.Core;
 using System.Collections.Generic;
-using UnityEditor.UIElements;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class EndGame : MonoBehaviour
 {
-    [SerializeField]
-    private GameObject SpawnPoint;
-    [SerializeField]
-    private GameObject Player;
-    private void Start()
-    {
-        SpawnPoint = GameObject.FindWithTag("Respawn");
-        Player = GameObject.FindWithTag("Player");
+    private string PlayerName;
 
+    void OnTriggerEnter(Collider col)
+    {
+        Time.timeScale = 0;
+        FindObjectOfType<RecordsMenu>().AddToRecords(PlayerName);
+        FindObjectOfType<WinMenu>().ShowMenu();
     }
-    private void OnTriggerEnter(Collider col)
-    {   
-        if (gameObject.tag == "Finish")
-        {
-            UnityEditor.EditorApplication.isPlaying = false;
-            Debug.Log("You win!");
-        }
-        else if(gameObject.tag == "Obtacle")
-        {
-            Player.transform.position = SpawnPoint.transform.position;
-            Debug.Log("You lose");
-        }
+    public void SetName(string name)
+    {
+        PlayerName = name;
     }
+
 }

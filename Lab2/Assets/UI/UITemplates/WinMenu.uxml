@@ -1,0 +1,8 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/Stylesheet.uss?fileID=7433441132597879392&amp;guid=9b89376fe0d73174a8360c1a6a0fb4a5&amp;type=3#Stylesheet" />
+    <ui:VisualElement name="win-menu" style="justify-content: center; align-items: center; height: 494px; display: none; background-color: rgba(0, 0, 0, 0.2);">
+        <ui:Label text="You win!" display-tooltip-when-elided="true" name="win-text" style="font-size: 30px; -unity-font-style: bold; color: rgb(255, 255, 255); margin-left: 10px; margin-right: 10px; margin-top: 10px; margin-bottom: 10px;" />
+        <ui:Button text="Records" display-tooltip-when-elided="true" name="records-btn" class="button" />
+        <ui:Button text="Exit" display-tooltip-when-elided="true" name="exit-btn" class="button" />
+    </ui:VisualElement>
+</ui:UXML>

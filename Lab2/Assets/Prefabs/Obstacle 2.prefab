@@ -12,9 +12,8 @@ GameObject:
   - component: {fileID: 2589657254588723641}
   - component: {fileID: 5426826069569657337}
   - component: {fileID: 7470040781311267894}
-  - component: {fileID: -4756156576075990626}
-  - component: {fileID: -6625067175541995071}
   - component: {fileID: -1204274126578410552}
+  - component: {fileID: 6607699221688845370}
   m_Layer: 0
   m_Name: Obstacle 2
   m_TagString: Obtacle
@@ -100,33 +99,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &-4756156576075990626
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5174718784369631136}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e741851cba3ad425c91ecf922cc6b379, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _data:
-    _json: '{"declarations":{"Kind":"Object","collection":{"$content":[],"$version":"A"},"$version":"A"}}'
-    _objectReferences: []
---- !u!114 &-6625067175541995071
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5174718784369631136}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 584a0fdcfd0051b41b46a912cf64fd6f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &-1204274126578410552
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -143,3 +115,17 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &6607699221688845370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5174718784369631136}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdc05c06cfd094b4ca6646f487ea8a76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SpawnPoint: {fileID: 0}
+  Player: {fileID: 0}
