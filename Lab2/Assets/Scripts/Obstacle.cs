@@ -15,7 +15,6 @@ public class Obstacle : MonoBehaviour
     }
     private void OnTriggerEnter(Collider col)
     {
-        FindFirstObjectByType<Counter>().AddValue();
         Player.transform.position = SpawnPoint.transform.position;
     }
 }

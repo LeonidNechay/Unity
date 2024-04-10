@@ -1,5 +1,6 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
-    <ui:VisualElement name="counter" style="align-items: flex-end;">
+    <ui:VisualElement name="counter" style="align-items: center; flex-direction: row; justify-content: flex-end;">
+        <ui:Label text="Coins" display-tooltip-when-elided="true" name="coins" style="font-size: 25px; -unity-font-style: bold;" />
         <ui:Label text="0" display-tooltip-when-elided="true" name="counter-label" style="-unity-font-style: bold; font-size: 25px; margin-left: 10px; margin-right: 10px; margin-top: 10px; margin-bottom: 10px;" />
     </ui:VisualElement>
 </ui:UXML>
