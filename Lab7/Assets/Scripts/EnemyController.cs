@@ -6,14 +6,14 @@ using static UnityEngine.GraphicsBuffer;
 
 public class EnemyController : MonoBehaviour
 {
-    //Animator animator;
+    Animator animator;
     private NavMeshAgent agent;
     [SerializeField] private GameObject target;
     private bool dead = false;
     private void Start()
     {
         agent = GetComponent<NavMeshAgent>();
-        //animator = GetComponent<Animator>();
+        animator = GetComponent<Animator>();
     }
     void Update()
     {
@@ -26,7 +26,7 @@ public class EnemyController : MonoBehaviour
     {
         dead = true;
         agent.destination = transform.position;
-        //animator.SetTrigger("Dead");
+        animator.SetTrigger("Dead");
         StartCoroutine(WaitForDeath());
     }
     
